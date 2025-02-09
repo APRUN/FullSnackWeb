@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zufra Jahan-Portfolio</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Bree+Serif&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Baloo Bhai 2", serif;
+      }
+      body {
+        background-color: rgb(213, 198, 198);
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #8D8DE3;
+        align-items: center;
+        padding:12px 12px ;
+      }
+      .nav-links {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+      }
+      li {
+        /* padding: 0 10px; */
+        padding: 0px 10px;
+        /* padding-left: 10px; */
+      }
+      .getbtn{
+        padding: 10px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #4B4BA5;
+        color: white;
+      }
+
+      /* Hover for a state to act when it is hovered */
+      .getbtn:hover{
+        background-color: pink;
+        /* To increment the size of the button */
+        scale: 1.1;
+        /* TO control the smoothness between 2 states */
+        transition: 0.5s; 
+      }
+      .nav-ele{
+        color: white;
+      }
+      .title{
+        /* rem->Font size related to root */
+        /* em->Font size related to parent */
+        font-size: 1.7rem;
+        color: white;
+      }
+      .logo{
+        display: flex;
+        align-items: center;
+        margin: 1px;
+      }
+      .logo i{
+        margin: 0px 6px;
+        font-size: 1.5rem;
+      }
+    
+      .cards{
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card{
+        border: 2px solid black;
+        padding: 8px;
+        border-radius: 10px;
+        /* Shadow on Y-axis, Shadow on X-axis, Blur effect */
+        box-shadow: 5px 5px 10px ;
+      }
+      .cbtn{
+        padding: 5px 15px;
+        background-color: #4B4BA5;
+        color: white;
+        border-radius:  5px;
+        cursor: pointer;
+      }
+      .below{
+        display: flex;
+        flex-direction: column;
+      }
+      :root{
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="bi bi-list"></i>
+            <h3 class="title">Zufra Jahan</h3>
+        </div>
+      <ul class="nav-links">
+        <li class="nav-ele">Home</li>
+        <li class="nav-ele">Services</li>
+        <li class="nav-ele">About Us</li>
+        <li class="nav-ele">Contact Us</li>
+      </ul>
+      <button class="getbtn">Get in Touch</button>
+    </nav>
+
+    <div class="cards">
+        <div class="card">
+            <img src="/prof2.png" alt="image">
+        </hr>
+        <div class="below">
+            <h1>Card1</h1>
+            <p>Hello this is description</p>
+            <button class="cbtn">Click me</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="/prof2.png" alt="image">
+        </hr>
+        <div class="below">
+            <h1>Card1</h1>
+            <p>Hello this is description</p>
+            <button class="cbtn">Click me</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="/prof2.png" alt="image">
+        </hr>
+        <div class="below">
+            <h1>Card1</h1>
+            <p>Hello this is description</p>
+            <button class="cbtn">Click me</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="/prof2.png" alt="image">
+        </hr>
+        <div class="below">
+            <h1>Card1</h1>
+            <p>Hello this is description</p>
+            <button class="cbtn">Click me</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="/prof2.png" alt="image">
+        </hr>
+        <div class="below">
+            <h1>Card1</h1>
+            <p>Hello this is description</p>
+            <button class="cbtn">Click me</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="/prof2.png" alt="image">
+        </hr>
+        <div class="below">
+            <h1>Card1</h1>
+            <p>Hello this is description</p>
+            <button class="cbtn">Click me</button>
+        </div>
+        </div>
+        <div class="card">
+            <img src="/prof2.png" alt="image">
+        </hr>
+        <div class="below">
+            <h1>Card1</h1>
+            <p>Hello this is description</p>
+            <button class="cbtn">Click me</button>
+        </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>
