@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Part 1 -->
+    <!-- <button id="btn" class="btn">Vote</button>
+    <button id="btn2" class="btn">Vote 2</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",
+        function(){ 
+            alert("Button Clicked");
+        });
+    </script> -->
+
+
+    <!-- Part 2 -->
+     <p id="text"><button>Hello</button></p>
+     <button id="changebtn">Change</button>
+
+<script>
+    // Steps:
+    // 1. Where is the button in DOM
+    // 2. When btn is clicked
+    // 3. Detect the paragraph
+    // 4. Change the text. 
+
+// Event Listener=> Click, mouseHover, KeyDown
+
+    // document.getElementById("changebtn").addEventListener("click",
+    //     function(){
+    //         document.getElementById("text").innerHTML="<p>Hello</p>;"
+    //     }
+    // );
+
+
+
+
+
+
+    
+localStorage.setItem("user","Chief");
+
+
+console.log(localStorage.getItem("user"));
+
+
+</script>
+
+
+</body>
+</html>
