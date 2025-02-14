@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Tailwind</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="flex items-center py-4 justify-around bg-[#070127] text-white">
+        <div class="flex gap-3">
+            <i class="bi bi-shield-fill text-xl md:block hidden"></i>
+            <h1 class="text-xl font-bold">Oggy</h1>
+            <button id="menu-btn" class="text-2xl md:hidden block"><i class="bi bi-list"></i></button>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div>
+            <ul class="gap-6 md:flex hidden">
+                <li class="cursor-pointer">Home</li>
+                <li class="cursor-pointer">About</li>
+                <li class="cursor-pointer">Pricings</li>
+                <li class="cursor-pointer">Contact</li>
+            </ul>
+        </div>
+
+        <div>
+            <button type="button" class="bg-[#8231FF] px-4 py-2 cursor-pointer rounded-md">Sign Up</button>
+        </div>
+    </nav>
+
+
+        <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-[#8231FF] text-white z-50 items-center flex flex-col justify-center">
+       <a href="" class="block py-2">Home</a>
+       <a href="" class="block py-2">About</a>
+       <a href="" class="block py-2">Pricings</a>
+       <a href="" class="block py-2">Contact</a>
+    </div>
+
+    <script>
+        // Detect hamburger icon from DOM
+        const menuBtn=document.getElementById('menu-btn');
+        // Detect Mobile Menu from DOM
+        const mobileMenu=document.getElementById('mobile-menu');
+        
+        // Detect click event on Ham icon
+        menuBtn.addEventListener('click',()=>{
+            mobileMenu.classList.toggle('hidden')
+        });
+
+    </script>
+
+
+
+</body>
+</html>
+
+
+
+<!-- Using hamburger -->
+ <!-- Brought hamburger from bootstrap icons
+ nav-links hide/view
+added mobile menu
+settled things to see when to hide and when to show
+received ham icon thorugh JS
+get the mobile menu div from JS
+detect event of click on ham icon
+performed toggle hidden class on mobile menu -->
